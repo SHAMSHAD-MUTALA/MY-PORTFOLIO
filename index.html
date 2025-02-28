@@ -118,6 +118,71 @@
             display: block;
             margin-bottom: 20px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .header-left {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            .header-right {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .header-right button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            .container {
+                width: 90%;
+            }
+            .profile-img {
+                width: 120px;
+                height: 132px;
+            }
+            .buttons button {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact-info a {
+                font-size: 1rem;
+            }
+            .contact-info a i {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-left {
+                font-size: 1.2rem;
+            }
+            .header-right button {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            .profile-img {
+                width: 100px;
+                height: 110px;
+            }
+            .buttons button {
+                padding: 6px 16px;
+                font-size: 0.8rem;
+            }
+            .contact-info a {
+                font-size: 0.9rem;
+            }
+            .contact-info a i {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
