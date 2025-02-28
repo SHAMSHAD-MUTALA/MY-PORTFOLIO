@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info - Shamshad Mutala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome for icons -->
+    <style>
+        body {
+            font-family: "Times New Roman", serif; /* Change font to Times New Roman */
+            background-color: #A6B6A4; /* Match background color with index.html */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232323;
+            color: white;
+            padding: 20px;
+            text-align: left; /* Align text to the left */
+        }
+        .container {
+            width: 60%;
+            margin: 100px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left; /* Center all content in the container */
+        }
+        h1 {
+            color: white; /* Set heading color to white */
+            text-align: left; /* Align heading to the left */
+            margin: 0;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: left; /* Center content in contact-info */
+        }
+        p {
+            margin: 10px 0; /* Add margin for better spacing */
+        }
+        a {
+            color: #1DA1F2; /* Default link color */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        a:hover {
+            color: #0d8bf0; /* Darker shade on hover */
+        }
+        .contact-form-container {
+            width: 60%;
+            margin: 80px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center; /* Center all content in the form container */
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form h2 {
+            text-align: left; /* Align "CONTACT ME" heading to the left */
+            margin-bottom: 20px; /* Add spacing below the heading */
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: center; /* Center labels */
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 50%; /* Reduced width to 50% */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: "Times New Roman", serif;
+            font-size: 16px;
+            margin-left: auto; /* Center inputs */
+            margin-right: auto; /* Center inputs */
+            display: block; /* Ensure inputs are block-level for centering */
+        }
+        .contact-form textarea {
+            resize: vertical; /* Allow vertical resizing of textarea */
+            min-height: 30px; /* Decreased height of the message input area */
+        }
+        .contact-form button {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block; /* Make the button a block-level element */
+            margin: 0 auto; /* Center the button */
+        }
+        .contact-form button:hover {
+            background-color: #0d8bf0; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GET IN TOUCH</h1> <!-- Heading for get in touch -->
+    </header>
+    <div class="container">
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:shamshadmutala@gmail.com">shamshadmutala@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> <strong>Mobile:</strong> <a href="tel:+91-7780609933">+91-7780609933</a></p>
+            <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shamshadm/" target="_blank">linkedin.com/in/shamshadm</a></p>
+            <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/SHAMSHAD-MUTALA" target="_blank">github.com/SHAMSHAD-MUTALA</a></p>
+        </div>
+        <p>Feel free to reach out to me via email or phone. I'm always open to new opportunities and collaborations!</p> <!-- Call-to-action -->
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <h2>CONTACT ME</h2> <!-- Heading aligned to the left -->
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+            style="position: fixed; bottom: 20px; right: 20px; padding: 20px; background: #444; color: white; border: none; border-radius: 50%; cursor: pointer;">
+        ↑
+    </button>
+</body>
+</html>
