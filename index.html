@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAMSHAD MUTALA-PORTFOLIO</title>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Shamshad Mutala's Portfolio - Showcasing projects, credentials, and contact information.">
+    <meta name="keywords" content="Shamshad Mutala, Portfolio, Projects, Case Studies, Contact">
+    <meta name="author" content="Shamshad Mutala">
+    <title>SHAMSHAD MUTALA - PORTFOLIO</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="https://example.com/path/to/favicon.png">
     <style>
         body {
             margin: 0;
@@ -183,50 +187,70 @@
                 font-size: 1rem;
             }
         }
+
+        /* Back to Top Button */
+        button[onclick*="scrollTo"] {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button[onclick*="scrollTo"]:hover {
+            background-color: #2F3E42;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="header-left">MY PORTFOLIO</div>
         <div class="header-right">
-            <button onclick="window.open('https://drive.google.com/file/d/1lZ4_t7kFrIRd8RJpDJ8gz2XzNVPup_1p/view?usp=drive_link')">WHO I AM</button>
+            <button onclick="window.open('https://drive.google.com/file/d/1lZ4_t7kFrIRd8RJpDJ8gz2XzNVPup_1p/view?usp=drive_link', '_blank')">WHO I AM</button>
             <button onclick="window.open('https://shamshad-mutala.github.io/CERTIFICATIONS/', '_blank')">CREDENTIALS</button>
             <button onclick="window.open('case-studies.html', '_blank')">CASE STUDIES</button>
             <button onclick="window.open('contact-info.html', '_blank')">GET IN TOUCH</button>
         </div>
     </header>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/SHAMSHAD-MUTALA/MY-PORTFOLIO/refs/heads/main/IMG-20240605-WA0045.jpg" alt="Profile Photo">
+        <img src="https://raw.githubusercontent.com/SHAMSHAD-MUTALA/MY-PORTFOLIO/refs/heads/main/IMG-20240605-WA0045.jpg" alt="Shamshad Mutala's Profile Photo" class="profile-img">
         <h2>SHAMSHAD MUTALA</h2>
         <div class="buttons">
-            <button onclick="window.open('https://drive.google.com/file/d/1lZ4_t7kFrIRd8RJpDJ8gz2XzNVPup_1p/view?usp=drive_link')">WHO I AM</button>
+            <button onclick="window.open('https://drive.google.com/file/d/1lZ4_t7kFrIRd8RJpDJ8gz2XzNVPup_1p/view?usp=drive_link', '_blank')">WHO I AM</button>
             <button onclick="window.open('https://shamshad-mutala.github.io/CERTIFICATIONS/', '_blank')">CREDENTIALS</button>
-            <button onclick="window.open('https://shamshad-mutala.github.io/PROJECTS/')">CASE STUDIES</button>
-            <button onclick="window.open('https://shamshad-mutala.github.io/CONTACT-ME/')">GET IN TOUCH</button>
+            <button onclick="window.open('https://shamshad-mutala.github.io/PROJECTS/', '_blank')">CASE STUDIES</button>
+            <button onclick="window.open('https://shamshad-mutala.github.io/CONTACT-ME/', '_blank')">GET IN TOUCH</button>
         </div>
     </div>
     
     <div class="contact-container">
         <h2>Contact Info</h2>
         <div class="contact-info">
-            <p><i class="fas fa-phone"></i> <strong>Mobile:</strong> 
+            <p>
+                <i class="fas fa-phone"></i> <strong>Mobile:</strong> 
                 <a href="tel:+91-7780609933">+91-7780609933</a>
-            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> 
-               <a href="mailto:shamshadmutala@gmail.com">shamshadmutala@gmail.com</a>
             </p>
+            <p>
+                <i class="fas fa-envelope"></i> <strong>Email:</strong> 
+                <a href="mailto:shamshadmutala@gmail.com">shamshadmutala@gmail.com</a>
             </p>
-            <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> 
-               <a href="https://www.linkedin.com/in/shamshadm/" target="_blank">linkedin.com/in/shamshadm</a>
+            <p>
+                <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/shamshadm/" target="_blank">linkedin.com/in/shamshadm</a>
             </p>
-            <p><i class="fab fa-github"></i> <strong>GitHub:</strong> 
-               <a href="https://github.com/SHAMSHAD-MUTALA" target="_blank">github.com/SHAMSHAD-MUTALA</a>
+            <p>
+                <i class="fab fa-github"></i> <strong>GitHub:</strong> 
+                <a href="https://github.com/SHAMSHAD-MUTALA" target="_blank">github.com/SHAMSHAD-MUTALA</a>
             </p>
         </div>
     </div>
+
     <!-- Back to Top Button -->
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
-            style="position: fixed; bottom: 20px; right: 20px; padding: 20px; background: #444; color: white; border: none; border-radius: 50%; cursor: pointer;">
-        ↑
-    </button>
-</body> 
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+</body>
 </html>
