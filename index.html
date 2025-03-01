@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shamshad Mutala's Portfolio - Showcasing projects, credentials, and contact information.">
+    <meta name="keywords" content="Shamshad Mutala, Portfolio, Projects, Case Studies, Contact">
+    <meta name="author" content="Shamshad Mutala">
+    <title>SHAMSHAD MUTALA - PORTFOLIO</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="https://example.com/path/to/favicon.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background-color: #A6B6A4; /* Greenish-gray background */
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            background-color: #232323;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .header-left {
+            font-size: 2rem;
+        }
+        .header-right {
+            display: flex;
+            gap: 10px;
+        }
+        .header-right button {
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            padding: 10px 20px;
+            cursor: pointer;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .header-right button:hover {
+            background-color: #2F3E42;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 165px;
+            border-radius: 30%; /* Squircle shape */
+            object-fit: cover;
+            border: 4px solid black;
+            margin-top: 40px;
+        }
+        .buttons {
+            margin-top: 40px;
+        }
+        .buttons button {
+            background-color: #232323; /* Dark grayish-blue */
+            color: white;
+            border: none;
+            border-radius: 100px; /* Adjust for more/less roundness */
+            padding: 10px 25px;
+            cursor: pointer;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            transition: 0.3s;
+        }
+        .buttons button:hover {
+            background-color: #2F3E42; /* Darker shade on hover */
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container {
+            text-align: center;
+            padding: 40px;
+            background: #232323;
+            color: white;
+            margin-top: 40px;
+        }
+        .contact-container h2 {
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .contact-info a i {
+            font-size: 1.5rem;
+        }
+        .email {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .header-left {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            .header-right {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .header-right button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            .container {
+                width: 90%;
+            }
+            .profile-img {
+                width: 120px;
+                height: 132px;
+            }
+            .buttons button {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact-info a {
+                font-size: 1rem;
+            }
+            .contact-info a i {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-left {
+                font-size: 1.2rem;
+            }
+            .header-right button {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            .profile-img {
+                width: 100px;
+                height: 110px;
+            }
+            .buttons button {
+                padding: 6px 16px;
+                font-size: 0.8rem;
+            }
+            .contact-info a {
+                font-size: 0.9rem;
+            }
+            .contact-info a i {
+                font-size: 1rem;
+            }
+        }
+
+        /* Back to Top Button */
+        button[onclick*="scrollTo"] {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button[onclick*="scrollTo"]:hover {
+            background-color: #2F3E42;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">MY PORTFOLIO</div>
+        <div class="header-right">
+            <button onclick="window.open('https://drive.google.com/file/d/1jCaEfER5XMKfD6X_TsWObqcFlrt26A2X/view?usp=sharing', '_blank')">WHO I AM</button>
+            <button onclick="window.open('https://shamshad-mutala-certification.netlify.app/', '_blank')">CREDENTIALS</button>
+            <button onclick="window.open('https://shamshad-mutala.github.io/PROJECTS/', '_blank')">CASE STUDIES</button>
+            <button onclick="window.open('https://shamshad-mutala.github.io/CONTACT-ME/', '_blank')">GET IN TOUCH</button>
+        </div>
+    </header>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/SHAMSHAD-MUTALA/MY-PORTFOLIO/refs/heads/main/IMG-20240605-WA0045.jpg" alt="Shamshad Mutala's Profile Photo" class="profile-img">
+        <h2>SHAMSHAD MUTALA</h2>
+        <div class="buttons">
+            <button onclick="window.open('https://drive.google.com/file/d/1jCaEfER5XMKfD6X_TsWObqcFlrt26A2X/view?usp=sharing', '_blank')">WHO I AM</button>
+            <button onclick="window.open('https://shamshad-mutala-certification.netlify.app/', '_blank')">CREDENTIALS</button>
+            <button onclick="window.open('https://shamshad-mutala.github.io/PROJECTS/', '_blank')">CASE STUDIES</button>
+            <button onclick="window.open('https://shamshad-mutala.github.io/CONTACT-ME/', '_blank')">GET IN TOUCH</button>
+        </div>
+    </div>
+    
+    <div class="contact-container">
+        <h2>Contact Info</h2>
+        <div class="contact-info">
+            <p>
+                <i class="fas fa-phone"></i> <strong>Mobile:</strong> 
+                <a href="tel:+91-7780609933">+91-7780609933</a>
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i> <strong>Email:</strong> 
+                <a href="mailto:shamshadmutala@gmail.com">shamshadmutala@gmail.com</a>
+            </p>
+            <p>
+                <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/shamshadm/" target="_blank">linkedin.com/in/shamshadm</a>
+            </p>
+            <p>
+                <i class="fab fa-github"></i> <strong>GitHub:</strong> 
+                <a href="https://github.com/SHAMSHAD-MUTALA" target="_blank">github.com/SHAMSHAD-MUTALA</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+</body>
+</html>
